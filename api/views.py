@@ -22,7 +22,7 @@ class ItemDetailView(RetrieveAPIView):
 	queryset = Item.objects.all()
 	serializer_class = DetailSerializer
 	lookup_field = 'id'
-	lookup_url_kwarg = 'Item_id'
+	lookup_url_kwarg = 'item_id'
 	
 	permission_classes =[IsWhat]
 	
