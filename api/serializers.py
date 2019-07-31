@@ -30,10 +30,10 @@ class FavoriteItemSerializer(serializers.ModelSerializer):
 
 
 class DetailSerializer(serializers.ModelSerializer):
-	what= FavoriteItemSerializer(many=True)
+	item= FavoriteItemSerializer(many=True)
 	class Meta:
 		model=Item
-		fields=['name', 'image', 'description','added_by','what',]
+		fields=['name', 'image', 'description','added_by','item',]
 
 
 
